@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor | Portfólio De Desenvolvedor</title>
+  <meta name="description" content="Portfólio de estudante de Desenvolvimento de Sistemas em busca de estágio em front-end.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== 1. CABEÇALHO ========== -->
+  <header class="cabecalho" id="topo">
+    <a href="#inicio" class="logo">&lt;/&gt;</a>
+
+    <div class="cabecalho__acoes">
+      <button type="button" class="botao-icone botao-tema" id="botaoTema" aria-label="Tema: alternar entre modo claro e escuro">
+        <svg class="icone-tema" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 15V8M18 16V9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M6 8V15Q6 20 11 20M18 16V9Q18 4 13 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <polygon points="6,2.5 2.2,8.5 9.8,8.5" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+          <polygon points="18,21.5 14.2,15.5 21.8,15.5" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+        Tema
+      </button>
+
+      <!-- Botão hambúrguer: aparece só no celular. aria-expanded é atualizado pelo JS -->
+      <button type="button" class="botao-icone botao-menu" id="botaoMenu"
+              aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menuPrincipal">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+    <nav class="menu" id="menuPrincipal" aria-label="Menu principal">
+      <ul class="menu__lista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="tituloHero">
+      <div class="hero__texto">
+        <p class="hero__saudacao"><span id="saudacao">Olá</span>, eu sou</p>
+        <h1 id="tituloHero">Vitor</h1>
+        <p class="hero__descricao">Estudante de Informática para Internet do Senac, que adora criar automações pessoais e interfaces simples.</p>
+        <a href="#projetos" class="botao">Projetos</a>
+      </div>
+      <img class="hero__imagem" src="img/foto.svg" alt="Avatar genérico de perfil, uma silhueta em verde" width="240" height="240">
+    </section>
+
+    <!-- ========== 3. SOBRE MIM ========== -->
+    <section class="secao" id="sobre" aria-labelledby="tituloSobre">
+      <h2 id="tituloSobre">Sobre mim</h2>
+      <p>Meu nome é Vitor e eu estudo Informática para Internet no Senac Zona Norte. Entrei para a área devido à vontade de criar coisas novas com a tecnologia.</p>
+      <p>Hoje estou aprendendo a construir páginas com HTML, CSS e JavaScript e quero aprofundar meus conhecimentos em meus projetos pessoais com python.</p>
+    </section>
+
+    <!-- ========== 4. HABILIDADES ========== -->
+    <section class="secao" id="habilidades" aria-labelledby="tituloHabilidades">
+      <h2 id="tituloHabilidades">Habilidades</h2>
+      <p>Tecnologias que estou desenvolvendo e meu nível em cada uma:</p>
+
+      <ul class="habilidades">
+        <li class="habilidade">
+          <span class="habilidade__nome">HTML</span>
+          <span class="nivel nivel--praticando">Praticando</span>
+        </li>
+        <li class="habilidade">
+          <span class="habilidade__nome">CSS</span>
+          <span class="nivel nivel--praticando">Praticando</span>
+        </li>
+        <li class="habilidade">
+          <span class="habilidade__nome">JavaScript</span>
+          <span class="nivel nivel--praticando">Praticando</span>
+        </li>
+        <li class="habilidade">
+          <span class="habilidade__nome">Python</span>
+          <span class="nivel nivel--iniciante">Iniciante</span>
+        </li>
+        <li class="habilidade">
+          <span class="habilidade__nome">Figma</span>
+          <span class="nivel nivel--confortavel">Confortável</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== 5. PROJETOS ========== -->
+    <section class="secao" id="projetos" aria-labelledby="tituloProjetos">
+      <h2 id="tituloProjetos">Projetos</h2>
+
+      <div class="projetos">
+        <article class="card">
+          <img src="img/Cleaner.png" alt="Terminal do Windows mostrando o resultado da limpeza: 707 itens removidos e 100,85 MB liberados" width="400" height="220">
+          <div class="card__corpo">
+            <h3>Cleaner: limpeza de arquivos temporários</h3>
+            <p>Script criado para apagar o conteúdo das pastas Prefetch, Temp do usuário e Temp do Windows, pedindo permissão de administrador para remover e como resultado mostra quantos itens foram removidos e quanto espaço foi liberado.</p>
+            <p class="card__tecnologias">Tecnologias: Python</p>
+          </div>
+        </article>
+
+        <!-- CARD 2: Sistema de Cadastro de Alunos (projeto final da UC 30, Algoritmos) -->
+        <article class="card">
+          <img src="img/Sistema de Cadastro de Alunos.png" alt="Menu de terminal do sistema de cadastro com as opções cadastrar, listar, buscar e sair" width="400" height="220">
+          <div class="card__corpo">
+            <h3>Sistema de Cadastro de Alunos</h3>
+            <p>Projeto final da UC de Algoritmos. Cadastra alunos com nome, idade e turma, valida os dados digitados, lista todos os cadastros e busca um aluno pelo nome.</p>
+            <p class="card__tecnologias">Tecnologias: Python</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/Portfólio.png" alt="Ilustração de uma página de portfólio com cabeçalho, avatar e cards de projetos" width="400" height="220">
+          <div class="card__corpo">
+            <h3>Meu Primeiro Portifólio</h3>
+            <p>Meu primeiro portifólio. É responsivo, tem temas claro e escuro selecionaveis, menu hamburguer caso acesse pelo celular, meus projetos e informações de contato.</p>
+            <p class="card__tecnologias">Tecnologias: HTML, CSS, JavaScript</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="secao" id="contato" aria-labelledby="tituloContato">
+      <h2 id="tituloContato">Contato</h2>
+      <p>Se quiser entrar em contato.</p>
+
+      <form id="formContato" class="formulario" novalidate>
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" aria-describedby="erroNome">
+          <span class="erro" id="erroNome" role="alert"></span>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="erroEmail">
+          <span class="erro" id="erroEmail" role="alert"></span>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem (mínimo 20 caracteres)</label>
+          <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="erroMensagem"></textarea>
+          <span class="erro" id="erroMensagem" role="alert"></span>
+        </div>
+
+        <p class="aviso-lgpd">Seus dados serão usados apenas para que eu possa responder à sua mensagem. Não serão compartilhados com terceiros.</p>
+
+        <div class="campo campo--checkbox">
+          <input type="checkbox" id="consentimento" name="consentimento" aria-describedby="erroConsentimento">
+          <label for="consentimento">Concordo com o uso dos meus dados para este contato.</label>
+          <span class="erro" id="erroConsentimento" role="alert"></span>
+        </div>
+
+        <button type="submit" class="botao">Enviar mensagem</button>
+
+        <p class="sucesso" id="mensagemSucesso" role="status"></p>
+      </form>
+
+      <ul class="redes">
+        <li><a href="https://github.com/FixyPy3r" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano">2026</span> Vitor Emanuel. Todos os direitos reservados.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <a href="#inicio" class="botao-topo" id="botaoTopo" aria-label="Voltar ao topo">↑</a>
+
+</body>
+</html>
