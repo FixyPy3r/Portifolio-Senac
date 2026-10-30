@@ -311,8 +311,9 @@ textarea:focus-visible {
 .card img {
   width: 100%;
   aspect-ratio: 400 / 220;
-  object-fit: cover;
-  object-position: top left;
+  object-fit: contain;
+  object-position: center;
+  background: var(--cor-fundo);
 }
 
 .card__corpo {
