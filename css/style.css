@@ -1,19 +1,18 @@
 :root {
-  --cor-fundo: #e9dfd0;          
-  --cor-superficie: #f5efe4;     
-  --cor-texto: #1c1b19;          
-  --cor-texto-suave: #5a5650;    
-  --cor-primaria: #4a5a2f;       
-  --cor-primaria-hover: #323d1f; 
-  --cor-castanho: #6b4a32;       
+  --cor-fundo: #e9dfd0;
+  --cor-superficie: #f5efe4;
+  --cor-texto: #1c1b19;
+  --cor-texto-suave: #5a5650;
+  --cor-primaria: #4a5a2f;
+  --cor-primaria-hover: #323d1f;
+  --cor-castanho: #6b4a32;
   --cor-texto-botao: #f5efe4;
-  --cor-borda: #c4b49c;          
-  --cor-rodape-fundo: #26241f;   
+  --cor-borda: #c4b49c;
+  --cor-rodape-fundo: #26241f;
   --cor-rodape-texto: #e9dfd0;
   --cor-erro: #8c2f26;
   --cor-sucesso: #3d5a2a;
 
-  
   --fonte-titulo: Georgia, "Times New Roman", serif;
   --fonte-texto: "Segoe UI", Arial, sans-serif;
 
@@ -21,15 +20,14 @@
   --transicao: 0.25s ease;
 }
 
-
 body.tema-escuro {
-  --cor-fundo: #161614;         
-  --cor-superficie: #23221f;     
-  --cor-texto: #e6e1d6;          
-  --cor-texto-suave: #b0aa9d;    
-  --cor-primaria: #a3b37a;       
+  --cor-fundo: #161614;
+  --cor-superficie: #23221f;
+  --cor-texto: #e6e1d6;
+  --cor-texto-suave: #b0aa9d;
+  --cor-primaria: #a3b37a;
   --cor-primaria-hover: #c0cf9a;
-  --cor-castanho: #c9a27e;       
+  --cor-castanho: #c9a27e;
   --cor-texto-botao: #161614;
   --cor-borda: #43413b;
   --cor-rodape-fundo: #0e0e0d;
@@ -38,8 +36,6 @@ body.tema-escuro {
   --cor-sucesso: #b4cc90;
 }
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,8 +43,8 @@ body.tema-escuro {
 }
 
 html {
-  scroll-behavior: smooth;       
-  scroll-padding-top: 80px;      
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -78,7 +74,6 @@ a {
   color: var(--cor-primaria);
 }
 
-
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -87,13 +82,11 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-
-
 .cabecalho {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;                        
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -116,7 +109,7 @@ textarea:focus-visible {
 }
 
 .botao-icone {
-  width: 44px;                 
+  width: 44px;
   height: 44px;
   font-size: 1.25rem;
   background: transparent;
@@ -132,9 +125,8 @@ textarea:focus-visible {
   border-color: var(--cor-primaria);
 }
 
-
 .botao-tema {
-  display: inline-flex;         
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   width: auto;
@@ -143,12 +135,10 @@ textarea:focus-visible {
   font-size: 1rem;
 }
 
-
 .icone-tema {
   width: 1.25rem;
   height: 1.25rem;
 }
-
 
 .menu {
   display: none;
@@ -161,7 +151,7 @@ textarea:focus-visible {
 
 .menu__lista {
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
   gap: 0.25rem;
   padding-top: 0.75rem;
 }
@@ -181,11 +171,9 @@ textarea:focus-visible {
   color: var(--cor-texto-botao);
 }
 
-
-
 .hero {
   display: flex;
-  flex-direction: column-reverse;  
+  flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
   padding: 3rem 1rem;
@@ -212,12 +200,11 @@ textarea:focus-visible {
 .hero__imagem {
   width: 200px;
   height: 200px;
-  object-fit: cover;    
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid var(--cor-primaria);
   background: var(--cor-superficie);
 }
-
 
 .botao {
   display: inline-block;
@@ -240,8 +227,6 @@ textarea:focus-visible {
   transform: translateY(-2px);
 }
 
-
-
 .secao {
   max-width: 1000px;
   margin: 0 auto;
@@ -253,7 +238,6 @@ textarea:focus-visible {
   margin-bottom: 1rem;
   color: var(--cor-castanho);
 }
-
 
 .secao h2::after {
   content: "";
@@ -270,11 +254,9 @@ textarea:focus-visible {
   max-width: 70ch;
 }
 
-
-
 .habilidades {
   display: grid;
-  grid-template-columns: 1fr;          
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   margin-top: 1rem;
 }
@@ -293,7 +275,6 @@ textarea:focus-visible {
   font-weight: bold;
 }
 
-
 .nivel {
   padding: 0.2rem 0.75rem;
   font-size: 0.875rem;
@@ -305,8 +286,6 @@ textarea:focus-visible {
 .nivel--iniciante   { color: var(--cor-texto-suave); }
 .nivel--praticando  { color: var(--cor-primaria); }
 .nivel--confortavel { color: var(--cor-sucesso); }
-
-
 
 .projetos {
   display: grid;
@@ -328,7 +307,6 @@ textarea:focus-visible {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .card img {
   width: 100%;
@@ -364,13 +342,10 @@ textarea:focus-visible {
   color: var(--cor-primaria-hover);
 }
 
-
 .card__link--breve {
   color: var(--cor-texto-suave);
   font-style: italic;
 }
-
-
 
 .formulario {
   max-width: 600px;
@@ -409,12 +384,10 @@ textarea:focus-visible {
   border-color: var(--cor-primaria);
 }
 
-
 .campo--invalido input,
 .campo--invalido textarea {
   border-color: var(--cor-erro);
 }
-
 
 .campo--checkbox {
   display: flex;
@@ -474,7 +447,6 @@ textarea:focus-visible {
   color: var(--cor-primaria-hover);
 }
 
-
 .rodape {
   display: flex;
   flex-direction: column;
@@ -496,7 +468,6 @@ textarea:focus-visible {
   opacity: 0.75;
   outline-color: var(--cor-rodape-texto);
 }
-
 
 .botao-topo {
   position: fixed;
@@ -527,7 +498,6 @@ textarea:focus-visible {
   background: var(--cor-primaria-hover);
 }
 
-
 @media (min-width: 768px) {
 
   .botao-menu {
@@ -544,7 +514,6 @@ textarea:focus-visible {
     padding-top: 0;
   }
 
-
   .cabecalho {
     flex-wrap: nowrap;
   }
@@ -559,10 +528,9 @@ textarea:focus-visible {
     margin-right: 1rem;
   }
 
- 
   .hero {
-    flex-direction: row;           
-    justify-content: center;       
+    flex-direction: row;
+    justify-content: center;
     text-align: left;
     padding: 5rem 2rem;
   }
@@ -580,7 +548,6 @@ textarea:focus-visible {
     font-size: 3.25rem;
   }
 
-
   .habilidades,
   .projetos {
     grid-template-columns: repeat(2, 1fr);
@@ -593,14 +560,15 @@ textarea:focus-visible {
   }
 }
 
-/* ---------- DESKTOP (a partir de 1024px) ---------- */
 @media (min-width: 1024px) {
 
   .cabecalho {
-    padding: 0.75rem 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: max(3rem, calc((100% - 1000px) / 2 + 2rem));
+    padding-right: max(3rem, calc((100% - 1000px) / 2 + 2rem));
   }
 
-  /* Projetos em 3 colunas */
   .projetos {
     grid-template-columns: repeat(3, 1fr);
   }
